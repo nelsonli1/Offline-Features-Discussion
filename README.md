@@ -27,3 +27,19 @@
 | **PIN Verification for Transactions** | Unique user-specific PIN for transactions                                                                                          | Ensures only the wallet owner can transact                                                                                   | Cumbersome for users to enter PINs frequently                                                                                          |
 | **Torn Transaction**               | Issue where value is removed from payer but not updated on payee                                                                   | Prevents malicious users from double-spending                                                                                | Difficult to recover lost value in offline systems                                                                                     |
 
+
+#### Policy Considerations
+
+- What should be the block list management process to prevent payments from lost / stolen devices?
+- What should be the transaction limits for offline transactions?
+- How do we define the settlement process?
+- How many devices can be issued at the same time?
+- What is the process for issuing new digital wallets? What kind of documentation is required from both merchants and consumers?
+- To what extent should the transactions be tracked?
+- How many devices can an individual have at once?
+- How long before we blacklist a card? Should we return the money after blacklisting a card?
+- Insurance policy for returning money in case of a natural disaster, fire, etc?
+- What policy should be required to prevent double spending?
+
+
+
