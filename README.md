@@ -8,6 +8,27 @@
 - Security
 - Privacy
 
+### Persona
+
+- **Auditors**: People or organization that executes audits on merchant’s financial information
+
+- **Central bank as the operator of the system**: As an operator, the central bank’s responsibility is ensuring smooth and efficient operation of the CBDC payment system, which includes managing clearing and settlement processes for transactions
+
+- **Central bank as the regulator**: As a regulator, the central bank's primary responsibility is to oversee and maintain the stability, efficiency, and integrity of the financial system, which includes formulating monetary policy, supervising banks, ensuring consumer protection, and managing systemic risk
+
+- **Online merchants**: Merchants that hold their business online and should be able to receive the payment regardless of the physical distance with the customer
+
+- **Payee**: Entity or individual acting as a recipient or beneficiary of a CBDC payment
+
+- **Payer**: Entity or individual acting as the party that initiates and authorizes a CBDC payment
+
+- **Physical merchants**: Merchants that hold their business offline and should be able to receive the payment in the same physical location with the customers
+
+- **Police authority**: A government body or organization responsible for enforcing laws related to financial crimes, such as fraud and money laundering associated with CDBC transactions
+
+- **Tax authority**: Government agency or organization responsible for overseeing and implementing taxation policies within a specific jurisdiction. The primary functions of a tax authority include assessing, collecting, and enforcing taxes on individuals, businesses, and other entities
+
+
 ### Design Considerations:
 | Name                               | Description                                                                                                                         | Benefits                                                                                                                    | Drawbacks                                                                                                                              |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
