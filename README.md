@@ -62,7 +62,7 @@
 
 - **Irrevocable:** State where a transaction, decision, or action cannot be revoked, canceled, or changed once initiated. Carries legal implications, binding parties to the terms of a transaction and emphasizing a commitment that cannot be withdrawn.
 
-- **Key:** ?
+- *Key:* ?
 
 - **Ledger:** A collection of financial accounts of a particular type. For CBDC payments, this is the collection of transactions.
 
@@ -72,7 +72,7 @@
 
 - **Offline:** Not controlled by or directly connected to a computer or external network. For CBDC, this refers to being disconnected from CBDC ledger systems, not necessarily disconnected from communication networks.
 
-- **Password:** A protected/private string of letters, numbers, and/or special characters used to authenticate an identity or to authorize access to data online.
+- *Password:* A protected/private string of letters, numbers, and/or special characters used to authenticate an identity or to authorize access to data online.
 
 - **Payee:** A recipient or beneficiary of a CBDC payment.
 
@@ -82,13 +82,13 @@
 
 - **Payment Instruction:** Message instruction sent from the payer to the payee consisting of transaction information like amount, payee details.
 
-- **Payment Authorization:** Process of granting approval for the execution of a payment transaction within the CBDC payment system on behalf of the payer.
+- *Payment Authorization:* Process of granting approval for the execution of a payment transaction within the CBDC payment system on behalf of the payer.
 
 - **Payment Service Provider:** Offers support to the merchants for accepting payments.
 
 - **Personal Identification Number (PIN):** A protected/private numeric code used by the payer during the payment authentication process.
 
-- **Proxy:** Offline transaction record when immediate online transactions are not possible. The proxy needs to be authenticated/validated for the transaction to be settled.
+- *Proxy:* Offline transaction record when immediate online transactions are not possible. The proxy needs to be authenticated/validated for the transaction to be settled.
 
 - **Pull Payment:** A transaction initiated by the payee pre-authorized by the payer.
 
