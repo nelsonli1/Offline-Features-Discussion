@@ -119,6 +119,65 @@
 - What is the process for issuing new digital wallets? What kind of documentation is required from both merchants and consumers?
 - To what extent should the transactions be tracked?
 - How many devices can an individual have at once?
+
+# User Stories
+
+## Auditors
+- As an auditor, I would like to get all the transaction records of a merchant so that I could determine whether or not a company's financial information is presented fairly. I want all the transactions to be traceable and to have details like transaction amount, timestamp and involved parties in an organized view.
+- As an auditor I would like to be able to easily compare the a merchant’s internal records to the central bank records to ensure that both reconcile.
+- As an auditor, I want access to a centralized system that facilitates efficient resolution of transaction disputes, ensuring accurate reporting and audit trail documentation.
+
+### Interface Requirements
+- Dashboard for overviewing all offline transactions - with filters for dates, users, etc.
+- Status indicators of synchronization with the central server and settlements.
+- Timestamps, parties involved and user identifiers for every action.
+- Role-based access controls.
+
+## Central Bank System Administrator
+- As a central bank administrator, I would like to have real-time visibility of all transactions for monitoring purposes to detect anomalies, ensure minimal downtime for users, preventing potential system issues (e.g. double spending) of the CBDC offline payment system.
+- As a central bank administrator, I would like to have a real-time visibility of funds in the accounts to monitor and detecting anomalies.
+- As a central bank administrator, I need to receive alerts for transactions that exceed predefined thresholds or exhibit suspicious patterns.
+- As a central bank administrator, I would like users to synchronize their accounts on a regular basis to improve traceability of funds and security.
+- As a central bank administrator, I would like to have the information about the owner of a CBDC account for financial security, fraud prevention and targeted financial assistance.
+
+### Interface Requirements
+- Dashboard for Real-Time Monitoring: Provide an interactive dashboard that displays real-time data on CBDC transactions and currency flow which enables quick decision-making and immediate response to any abnormalities or critical issues in the system.
+- Integration Capabilities: Ensure the interface can integrate seamlessly with other financial systems, databases, and external APIs to promote interoperability and efficient data exchange, enhancing the system's utility and functionality.
+- Backup and Recovery Systems: Implement robust backup and disaster recovery solutions that ensure data integrity and system availability in case of system failures or other disruptions.
+
+## Central Bank as the Regulator
+- As a central bank regulator, I would like to have a real-time visibility of all transactions for regulatory purposes so that I can maintain control, detect anomalies and ensure policy compliance, ensuring stability of the financial system.
+
+### Interface Requirements
+- Reporting and Compliance Tools: Include automated reporting tools for compliance with regulatory requirements and easy generation of financial reports. Streamlines compliance processes and ensures adherence to regulatory standards. (e.g. Manual inspection when the system detects a transfer that involves large amount of fund).
+
+## Government Authority Responsible for Distributing Emergency Funds
+- As a government official, I would like to be able to transfer funds in a timely manner in the event of an emergency to individuals or businesses so that they can use the funds to purchase basic necessities.
+
+### Interface Requirements
+- The ability to transfer CDBC to a large group of users in a short period of time, without requiring existing infrastructure.
+- The possibility of transferring CDBC across and within different segments of the government.
+
+## Online Merchants
+- As a merchant, I want to be able to accept offline CBDC payments from users remotely.
+- As a subscription services provider, I want to be able to request recurring payments to manage subscription services to customers.
+- As a merchant, I want to have a safety period to approve purchases until the transaction is settled or some mechanism to recover value in case of a failed transaction.
+- As a merchant, I would like to be notified of transaction status prior to approving the purchase.
+- As a merchant, I want to quickly be able to refund a customer (make a payment to the customer) when they return their purchase.
+
+### Interface Requirements
+- Overviewing all offline transactions - Total revenue, items sold, timestamp for each transaction, identifier information for each transaction.
+- A subscription payment system. When a user agrees to use your service and pays the fee periodically, the system should be able to automatically transfer this money.
+- It should be easy to trace and manage each customer purchase record to provide customer service, such as refund, exchange and upgrade.
+- Notification system to ensure customers that the payment is settled.
+- Mechanism to initiate refund on purchases that have been returned/damaged during delivery process.
+- Database for keeping track record of all offline transactions.
+
+## Payee
+- As a payee, I want a simple user-friendly interface for receiving offline CBDC transactions. The process should require the least effort as possible on my behalf.
+- As a payee, I want a status notification for the offline CBDC transaction that indicates whether the payment succeeded, is still pending, or failed.
+- As a child, I want to receive money from my parents to buy lunch at school without having to request it
+
 - How long before we blacklist a card? Should we return the money after blacklisting a card?
 - Insurance policy for returning money in case of a natural disaster, fire, etc?
 - What policy should be required to prevent double spending?
