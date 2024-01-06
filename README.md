@@ -176,11 +176,59 @@
 ## Payee
 - As a payee, I want a simple user-friendly interface for receiving offline CBDC transactions. The process should require the least effort as possible on my behalf.
 - As a payee, I want a status notification for the offline CBDC transaction that indicates whether the payment succeeded, is still pending, or failed.
-- As a child, I want to receive money from my parents to buy lunch at school without having to request it
+- As a child, I want to receive money from my parents to buy lunch at school without having to request it.
+- As a payee, I would like to receive emergency CBDC funds in the case of natural disaster events so that I can purchase items of immediate need.
+- As an individual, I want to request money from my other friends to pay me back for lunch.
+- As a payee, I want to be able to transfer money from my online wallet to my offline wallet from both CBDC and conventional form of money.
+- As a payee, I want to be able to deposit excess funds onto a separate device stored in a secure location.
 
-- How long before we blacklist a card? Should we return the money after blacklisting a card?
-- Insurance policy for returning money in case of a natural disaster, fire, etc?
-- What policy should be required to prevent double spending?
+### Interface Requirements
+- Transaction overview: transaction amount, timestamp, status (value received/settled).
+- Payer Information (identifier/name), transaction ID, purpose of transaction (description).
+- Confirmation prompts for important actions.
+- Export functionality to store transaction record locally on the device.
+- Help section in case something goes wrong.
 
+## Payer
+- As a payer, I want a user-friendly interface for initiating and authorizing offline CBDC transactions securely.
+- As a payer, I would like to be able to recover the value of my CBDC funds in case if I lose my wallet.
+- As a parent, I want to give money to my child to buy lunch at school without having the child initiate the transaction.
+- As an individual with a phone plan, I would like to pay my phone bill each month using offline CBDC without having to authorize the transaction each time.
+- As an online shopper, I want to purchase items online using my offline CBDC wallet remotely.
+- As an in-person shopper, I want to purchase items in-store using CBDC through a tap-to-pay method.
+- As an online or in-person shopper, I would like to be able to initiate a chargeback process in situations where requesting a refund is not a viable option.
+- As a payer, I want explicit confirmation prompts for the verification of the party on the receiving end so that my money doesn’t disappear.
+- As a payer, I want to be able to quickly and independently add funds to my account from a funds storage at home so that I have enough funds to make a payment.
+- As a payer, I want to be able to freely switch between various payment methods online and in person at the point of transaction.
+- As a payer, I want to be able to go to an ATM to top up my offline wallet or withdraw physical cash from my offline wallet.
 
+### Interface Requirements
+- Confirmation for the authentication of the payee (probably need a certificate mechanism for that) (subject to discussion).
 
+## Physical Merchants
+- As a merchant, I want to accept offline payments from customers at the store through a tap-to-pay method.
+- As a merchant, I want to integrate CBDC payment acceptance with my existing payment accepting devices.
+- As a merchant, I want a CBDC payment system to have the same user identification across multiple approved devices so that all my income goes to the same account.
+- As a merchant, I want a mechanism to authorize my employees to accept the transactions on my devices.
+- As a merchant, I want a legal mechanism to settle pending/failed transactions or disputes.
+- As a customer service representative, I want the ability to retrieve and review detailed transaction histories for customer inquiries, ensuring efficient customer support by providing representatives with the necessary information to address customer inquiries.
+- As a manager, I would like the CBDC payment system to be integrated with other systems including ERP, Accounting ensuring single source of truth and consistency across multiple systems.
+- As an owner, I would like to authorize managers to handle transactions on my behalf (payments, reimbursements, etc.).
+- As an owner, I would like real-time updates on unsuccessful transactions to notify customers and assist customers.
+
+### Interface Requirements
+- All transactions overview: cumulative statistics about transactions.
+- Transaction overview: transaction amount, timestamp, status (value received/settled).
+- Payer Information (identifier/name), transaction ID, purpose of transaction (description).
+- Needed in case of insufficient funds (i.e., buying stuff with a cheque in Stan’s example).
+- Refund mechanism to reimburse payees for returned/damaged goods.
+
+## Police Authority
+- As a police officer responsible for investigating criminal cases, I would need to get the transaction records of the suspect including the sender and the receiver so that I could use them as evidence. (Should be able to find the person connected to a CBDC account).
+
+### Interface Requirements
+- Authorization to overview transaction history of the individual being investigated.
+- Ability to follow the money spent/received by the individual
+
+## Tax Authority
+- As a government authority, I want to be able to see the transaction record of a person's financial history, and ensure that they adhere to legal and compliance requirements, preventing tax evasion.
